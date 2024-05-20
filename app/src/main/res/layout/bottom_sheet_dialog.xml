@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
 
             android:paddingHorizontal="16dp"
-            android:paddingTop="32dp">
+            android:paddingTop="16dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/frameLayout"
@@ -226,8 +226,7 @@
                 app:srcCompat="@drawable/rectangle"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                tools:layout_editor_absoluteX="59dp" />
+                app:layout_constraintEnd_toEndOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
