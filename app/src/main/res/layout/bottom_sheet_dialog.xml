@@ -38,7 +38,7 @@
                     style="@style/input_search"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/fly"
+                    android:drawableStart="@drawable/air_bottomsheel"
                     android:drawablePadding="8dp"
                     android:focusable="false"
                     android:hint="@string/hint_from"
@@ -65,7 +65,7 @@
                     android:layout_alignParentBottom="true"
 
                     android:digits="абвгдеёжзийклмнопрстуфхцчшщъыьэюя АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ-"
-                    android:drawableStart="@drawable/searhc"
+                    android:drawableStart="@drawable/search2_icon"
                     android:drawablePadding="8dp"
                     android:hint="@string/hint_to"
                     android:paddingVertical="8dp"
