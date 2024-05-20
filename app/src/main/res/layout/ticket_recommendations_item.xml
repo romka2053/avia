@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="8dp">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/oval_orange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name_company_text"
+        style="@style/text_medium_italic_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="200dp"
+        android:layout_marginStart="8dp"
+        tools:text="Победа "
+        android:lines="1"
+        android:ellipsize="end"
+        app:layout_constraintStart_toEndOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/time_tickets"
+        style="@style/text1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:lines="1"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/name_company_text"
+        app:layout_constraintTop_toBottomOf="@+id/name_company_text"
+        tools:text="07:00 12:00 15:00 20:00 07:00 12:00 15:00 20:00 07:00 12:00 15:00 20:00 " />
+
+    <TextView
+        android:id="@+id/text_price_recommendations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_medium_italic_14_blue_other"
+        tools:text="12 000 P"
+        android:drawableRight="@drawable/select_icon"
+        android:drawablePadding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/name_company_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

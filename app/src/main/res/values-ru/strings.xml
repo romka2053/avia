@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Авиабилеты</string>
+
+<!-- bottom menu-->
+    <string name="air_tickets">Авиабилеты</string>
+    <string name="hotels">Отели</string>
+    <string name="shorter">Короче</string>
+    <string name="subscriptions">Подписки</string>
+    <string name="profile">Профиль</string>
+    <string name="fly_away_musically">Музыкально отлететь</string>
+    <string name="from_price">от</string>
+
+
+    <!-- Main airTicket Fragment -->
+    <string name="search_airTicket_text">Поиск дешевых авиабилетов</string>
+    <string name="hint_from">Откуда-Москва</string>
+    <string name="hint_to">Куда-Турция</string>
+    <string name="input_from">Введите место отправления</string>
+
+    <!-- BottomSheetDialog -->
+    <string name="route_text">Сложный маршрут</string>
+    <string name="anywhere_text">Куда угодно</string>
+    <string name="weekend_text">Выходные</string>
+    <string name="hot_tickets_text">Горячие билеты</string>
+
+
+    <!-- Search Fragment-->
+    <string name="plus_here">Обратно</string>
+    <string name="count_class">1,эконом</string>
+    <string name="filters">фильтры</string>
+    <string name="direct_flights">Прямые рейсы</string>
+    <string name="show_all">Показать все</string>
+    <string name="hide">Скрыть</string>
+    <string name="choose">Выбрать</string>
+    <string name="cancel">Отмена</string>
+    <string name="here_error">Обратно не может быть раньше отправки</string>
+    <string name="view_all_tickets">Посмотреть все билеты</string>
+    <string name="subscribe_to_price">Подписаться на цену</string>
+
+    <!-- fragment_tickets_all_-->
+
+    <string name="hour">ч</string>
+    <string name="minutes">м</string>
+    <string name="road">в пути</string>
+    <string name="no_transfers">Без пересадок</string>
+    <string name="filter">Фильтр</string>
+    <string name="price_graphic">График цен</string>
+</resources>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".presentation.SearchFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_frame"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/edit_text_from_search_fragment"
+                style="@style/input_search"
+                android:layout_width="0dp"
+                android:paddingEnd="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:drawablePadding="8dp"
+                android:hint="@string/hint_from"
+                android:paddingVertical="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/back_image"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/replace_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/replace_icon"
+                app:layout_constraintBottom_toTopOf="@+id/view_line"
+                app:layout_constraintEnd_toEndOf="@+id/edit_text_from_search_fragment"
+                app:layout_constraintTop_toTopOf="@+id/edit_text_from_search_fragment" />
+
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="0dp"
+                android:layout_height="1sp"
+                android:background="@color/grey_5"
+                app:layout_constraintEnd_toEndOf="@+id/edit_text_from_search_fragment"
+                app:layout_constraintStart_toStartOf="@+id/edit_text_from_search_fragment"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_from_search_fragment" />
+
+            <EditText
+                android:id="@+id/edit_text_to_search_fragment"
+                style="@style/input_search"
+                android:layout_width="0dp"
+                android:paddingEnd="20dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:hint="@string/hint_from"
+                android:paddingVertical="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/edit_text_from_search_fragment"
+                app:layout_constraintTop_toTopOf="@+id/view_line" />
+
+            <ImageView
+                android:id="@+id/back_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/back_icon"
+                app:layout_constraintBottom_toBottomOf="@+id/edit_text_to_search_fragment"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/edit_text_from_search_fragment" />
+
+            <ImageView
+                android:id="@+id/clear_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/close_icon"
+                app:layout_constraintBottom_toBottomOf="@+id/edit_text_to_search_fragment"
+                app:layout_constraintEnd_toEndOf="@+id/edit_text_to_search_fragment"
+                app:layout_constraintTop_toTopOf="@+id/edit_text_to_search_fragment" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/here_chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/plus_here"
+                    android:textAppearance="@style/text_in_chip"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/grey_3"
+                    app:chipIcon="@drawable/plus_icon"
+                    app:chipIconSize="10dp"
+                    app:iconStartPadding="5dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/date_chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/text_in_chip"
+                    android:textColor="@color/white"
+
+                    app:chipBackgroundColor="@color/grey_3"
+                    tools:text="24 фев,сб" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/count_class_chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/count_class"
+                    android:textAppearance="@style/text_in_chip"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/grey_3"
+                    app:chipIcon="@drawable/class_count_icon"
+
+                    app:chipIconSize="10dp"
+                    app:iconStartPadding="5dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/filters_chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filters"
+                    android:textAppearance="@style/text_in_chip"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/grey_3"
+                    app:chipIcon="@drawable/setting_icon"
+
+                    app:chipIconSize="10dp"
+                    app:iconStartPadding="5dp" />
+
+
+            </com.google.android.material.chip.ChipGroup>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/input_frame"
+            android:orientation="vertical"
+
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
+
+            <TextView
+                style="@style/text_title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/direct_flights" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recommendations_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="3"
+                tools:listitem="@layout/ticket_recommendations_item">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_view_all"
+            style="@style/button_all_ticket"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/view_all_tickets"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_view_all"
+
+            android:padding="16dp"
+            android:background="@drawable/input_frame_radius_8dp"
+            >
+
+            <ImageView
+                android:id="@+id/subscribe_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+            android:src="@drawable/subscribe_icon" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="12dp"
+                style="@style/text2"
+                android:layout_toStartOf="@+id/switch2"
+                android:text="@string/subscribe_to_price"
+
+                android:layout_toEndOf="@+id/subscribe_image"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch2"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                app:theme="@style/Color1SwitchStyle"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="0dp" />
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

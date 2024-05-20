@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Air Tickets</string>
+
+
+    <!-- bottom menu-->
+    <string name="air_tickets">Air Tickets</string>
+    <string name="hotels">Hotels</string>
+    <string name="shorter">Shorter</string>
+    <string name="subscriptions">Subscriptions</string>
+    <string name="profile">Profile</string>
+
+
+    <!-- Main airTicket Fragment -->
+    <string name="search_airTicket_text">Finding cheap flights</string>
+    <string name="hint_from">From-Moscow</string>
+    <string name="hint_to">To-Turkey</string>
+    <string name="fly_away_musically">Fly away musically</string>
+    <string name="from_price">from</string>
+    <string name="input_from">Input from</string>
+    <!-- BottomSheetDialog -->
+    <string name="route_text">Difficult route</string>
+    <string name="anywhere_text">Anywhere</string>
+    <string name="weekend_text">Weekend</string>
+    <string name="hot_tickets_text">Hot tickets</string>
+
+    <!-- Search Fragment-->
+    <string name="plus_here">Here</string>
+    <string name="count_class">1,economy</string>
+    <string name="filters">filters</string>
+    <string name="direct_flights">Direct flights</string>
+    <string name="show_all">Show all</string>
+    <string name="hide">Hide</string>
+    <string name="choose">Choose</string>
+    <string name="cancel">Cancel</string>
+    <string name="here_error">Return cannot be before dispatch</string>
+    <string name="view_all_tickets">View all tickets</string>
+    <string name="subscribe_to_price">Subscribe to price</string>
+
+    <!-- fragment_tickets_all_-->
+
+    <string name="hour">h</string>
+    <string name="minutes">m</string>
+    <string name="road">on the road</string>
+    <string name="no_transfers">No transfers</string>
+    <string name="filter">Filter</string>
+    <string name="price_graphic">Graphic price</string>
+
+</resources>

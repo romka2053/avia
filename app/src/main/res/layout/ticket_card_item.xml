@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+
+
+    >
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="24dp"
+        android:background="@drawable/input_frame">
+
+
+        <TextView
+            android:id="@+id/text_price_tickets"
+            style="@style/style_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="6 990 P" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:paddingVertical="16dp">
+
+            <View
+                android:id="@+id/view_ticket"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/oval_orange"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/time_from"
+                style="@style/text_medium_italic_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="9dp"
+                app:layout_constraintBottom_toTopOf="@+id/airport_from"
+                app:layout_constraintStart_toEndOf="@+id/view_ticket"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5"
+                tools:text="03:15" />
+
+            <TextView
+                android:id="@+id/dash_text"
+                style="@style/text_medium_italic_14_grey6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" – "
+                app:layout_constraintStart_toEndOf="@+id/time_from"
+                app:layout_constraintTop_toTopOf="@+id/time_from" />
+
+            <TextView
+                android:id="@+id/time_to"
+                style="@style/text_medium_italic_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/dash_text"
+                app:layout_constraintTop_toTopOf="@+id/time_from"
+                tools:text="07:10" />
+
+            <TextView
+                android:id="@+id/airport_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="dme"
+                android:textAllCaps="true"
+                style="@style/text_medium_italic_14_grey6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/time_from"
+                app:layout_constraintTop_toBottomOf="@+id/time_from"
+                 />
+            <TextView
+                android:id="@+id/airport_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="aer"
+                android:textAllCaps="true"
+                style="@style/text_medium_italic_14_grey6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/time_to"
+                app:layout_constraintTop_toBottomOf="@+id/time_from"
+                />
+
+            <TextView
+                android:id="@+id/travel_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                style="@style/text_medium_14"
+                tools:text="4ч в пути / Без пересадок"
+                app:layout_constraintStart_toEndOf="@+id/time_to"
+                app:layout_constraintTop_toTopOf="@+id/time_from" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/badge"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:text="Самый удобный" />
+</FrameLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/airTicketFragment">
+
+    <fragment
+        android:id="@+id/airTicketFragment"
+        android:name="com.roman.airtickets.presentation.AirTicketFragment"
+        android:label="fragment_air_ticket"
+        tools:layout="@layout/fragment_air_ticket" >
+        <action
+            android:id="@+id/action_airTicketFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_airTicketFragment_to_difficultRouteFragment"
+            app:destination="@id/difficultRouteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/stubFragment"
+        android:name="com.roman.airtickets.presentation.HotelsFragment"
+        android:label="fragment_stub"
+        tools:layout="@layout/fragment_hotels" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.roman.airtickets.presentation.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/shorterFragment"
+        android:name="com.roman.airtickets.presentation.ShorterFragment"
+        android:label="fragment_shorter"
+        tools:layout="@layout/fragment_shorter" />
+    <fragment
+        android:id="@+id/subscriptionsFragment"
+        android:name="com.roman.airtickets.presentation.SubscriptionsFragment"
+        android:label="fragment_subscriptions"
+        tools:layout="@layout/fragment_subscriptions" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.roman.airtickets.presentation.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_ticketsAllFragment"
+            app:destination="@id/ticketsAllFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ticketsAllFragment"
+        android:name="com.roman.airtickets.presentation.TicketsAllFragment"
+        android:label="fragment_tickets_all_"
+        tools:layout="@layout/fragment_tickets_all_" />
+    <fragment
+        android:id="@+id/difficultRouteFragment"
+        android:name="com.roman.airtickets.presentation.DifficultRouteFragment"
+        android:label="fragment_difficult_route"
+        tools:layout="@layout/fragment_difficult_route" />
+</navigation>
