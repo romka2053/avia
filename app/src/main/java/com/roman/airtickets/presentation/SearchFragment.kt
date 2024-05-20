@@ -233,6 +233,9 @@ class SearchFragment : Fragment() {
             HERE
         }
     }
-
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding=null
+    }
 
 }

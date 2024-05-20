@@ -109,4 +109,8 @@ class AirTicketFragment : Fragment() {
             )
         binding.editTextFrom.clearFocus()
     }
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding=null
+    }
 }

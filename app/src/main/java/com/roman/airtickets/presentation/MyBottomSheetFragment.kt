@@ -135,5 +135,9 @@ class MyBottomSheetFragment : BottomSheetDialogFragment() {
 
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding=null
+    }
 
 }

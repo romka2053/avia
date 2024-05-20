@@ -13,6 +13,7 @@
         android:theme="@style/Theme.AirTickets"
         tools:targetApi="31">
         <activity
+            android:windowSoftInputMode="adjustPan"
             android:name=".presentation.MainActivity"
             android:exported="true">
             <intent-filter>
